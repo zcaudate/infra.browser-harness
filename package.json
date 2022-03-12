@@ -1,0 +1,13 @@
+{
+  "name" : "infra.browser-harness",
+  "main" : "src/main.js",
+  "scripts" : {
+    "package" : "browserify . -d -o bundle.js",
+    "release" : "cp bundle.js ../../../../resources/assets/rt.javafx/harness.js"
+  },
+  "dependencies" : {
+    "valtio" : "1.2.11",
+    "react" : "17.0.2",
+    "uuid" : "8.3.2"
+  }
+}
